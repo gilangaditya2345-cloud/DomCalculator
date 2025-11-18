@@ -1,13 +1,9 @@
-var answer;
-function init()
-{
-    answer = document.getElementById("ans").firstChild;
+function init() {
     comp("uin");
 }
 
-function comp(id)
-{
+function comp(id) {
     var el = document.getElementById(id);
     var res = eval(el.value);
-    answer.data = res;
+    document.getElementById("ans").innerHTML = res;
 }
